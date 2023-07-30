@@ -47,7 +47,7 @@ Citizen.CreateThread(function()
 		end
 
 		if target ~= nil then
-			if HasEntityBeenDamagedByEntity(target,GetPlayerPed(-1),1) then
+			if HasEntityBeenDamagedByAnyPed(target,GetPlayerPed(-1),1) then
 				if HasBulletImpactedInBox(cTCoords[1]+0.06,cTCoords[2]+0.12,cTCoords[3]+0.46,  cTCoords[1]-0.06,cTCoords[2],cTCoords[3]+0.6,true,true) then
 					points = points + 5
 				elseif HasBulletImpactedInBox(cTCoords[1]+0.11,cTCoords[2]+0.12,cTCoords[3]+0.41,  cTCoords[1]-0.11,cTCoords[2],cTCoords[3]+0.69,true,true) then
